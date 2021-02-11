@@ -185,32 +185,61 @@ footer {
     padding: 0;
   }
   background: var(--text);
-  nav {
-    height: 100%;
-    margin: 2rem 0;
-    width: 50%;
-    li {
-      padding: 1rem 0;
-      a {
-        color: var(--hint);
-        transition: all .2s ease-in-out;
-        &:hover {
-          color: white;
-          font-size: 2rem;
-          transition: all 0.7s;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .prefix {
+      background: linear-gradient(to right, var(--dark), var(--light));
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+    input {
+      outline: 0;
+      border: 0;
+      min-width: 400px;
+      @include xs {
+        min-width: 200px;
+      }
+      padding: 1rem 2rem;
+      @include xs {
+        padding: 1rem 0rem;
+      }
+      line-height: 2rem;
+      &::placeholder {
+        color: var(--text);
+        @include xs {
         }
+      }
+    }
+    button {
+      background: var(--text);
+      border: 0;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        opacity: 0.8;
+      }
+      .postfix {
+        background: linear-gradient(to right, var(--dark), var(--light));
+        padding: 1rem 2rem;
+        color: white;
+        font-size: 2rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
       }
     }
   }
   p {
-    height: 100%;
+    font-size: 1.4rem;
     a {
       color: var(--hint);
-      &:hover {
-        color: white;
-        font-size: 2rem;
-        transition: all 0.7s;
-      }
     }
   }
 }
