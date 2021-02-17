@@ -83,6 +83,20 @@ aside {
       margin: 0 0 2rem 0;
       font-style: italic;
     }
+    .projet-container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      a {
+        padding: 1rem 0;
+        &:hover {
+          color: var(--primary);
+          transform: scale(1.1);
+          transition: all 0.4s;
+        }
+      }
+    }
     .skill-container {
       display: flex;
       flex-flow: row nowrap;
@@ -106,10 +120,11 @@ aside {
       padding: 1rem 1rem 1rem 0;
       cursor: pointer;
       &:hover {
-        i {
+        i,
+        p {
           color: var(--primary);
           transform: scale(1.3);
-          transition: all 0.2s;
+          transition: all 0.4s;
         }
       }
       a {
@@ -224,7 +239,7 @@ footer {
       cursor: pointer;
       transition: all 0.2s;
       &:hover {
-        opacity: 0.8;
+        transform: scale(1.1);
       }
       .postfix {
         background: linear-gradient(to right, var(--dark), var(--light));
