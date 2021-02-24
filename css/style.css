@@ -225,6 +225,9 @@ footer {
       font-size: 2rem;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem; }
+      @media (max-width: 480px) {
+        footer form .prefix {
+          border-radius: 0; } }
     footer form input {
       outline: 0;
       border: 0;
