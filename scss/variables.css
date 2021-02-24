@@ -1,11 +1,10 @@
 :root {
   --font: "Mulish", sans-serif;
-  --light: #00c3ff;
-  --primary: #2071e7;
-  --dark: #2980b9;
+  --light: #cdf7f6;
+  --primary: #8fb8de;
+  --dark: #9a94bc;
   --text: #333;
   --background: #fafafa;
   --hint: #999;
   --border: #ddd;
 }
-/*# sourceMappingURL=variables.css.map */
